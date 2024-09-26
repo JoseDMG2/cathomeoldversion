@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatHome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logotipo.png" alt="Logo" width="170" height="50"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#inicio">Home</a>
+                        <a class="nav-link" href="#negocios">Negocios</a>
+                        <a class="nav-link" href="#parati">Para ti</a>
+                        <a class="nav-link" href="#preguntas">Preguntas</a>
+                        <a class="nav-link" href="#descargas">Descargas</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Primera Sección -->
+        <section class="Inicio" id="incio">
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 text-start title">
+                        <h1>¡Bienvenidos a CatHome!</h1>
+                        <p>
+                            Aquí encontrarás adorables compañeros peludos que
+                            están en busca de un hogar lleno de amor. Nuestra misión es conectar a estos maravillosos
+                            felinos con personas y familias dispuestas a brindarles una segunda oportunidad. Cada gato tiene
+                            una historia única y está esperando compartirla contigo.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Video Presentación
+                        </button>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center mt-3">
+                        <img src="Imagenes/Portada.png" alt="Portada" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Un gatito que canta :D</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="460" height="215" src="https://www.youtube.com/embed/hPYAe2jqNP0" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://youtu.be/hPYAe2jqNP0?si=bj7q_vwwu3tAvXI3', '_blank')">Ver en YT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Segunda Sección -->
+
+         
+        <section class="Negocios py-5 bg-negocios" id="negocios">
+            <div class="container">
+                <h2 class="text-center mb-4">Generamos Oportunidades para los Negocios</h2>
+                <div class="row">
+                    <!-- Beneficio 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img src="Imagenes/beneficio1.png" alt="Beneficio 1" class="card-img-top mx-auto" style="width: 25%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Publica tus productos</h5>
+                                <p class="card-text">Anuncia artículos para gatos en nuestra página y conecta con amantes de los felinos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beneficio 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img src="Imagenes/beneficio2.png" alt="Beneficio 2" class="card-img-top mx-auto" style="width: 25%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Programa de socios</h5>
+                                <p class="card-text">Únete a nuestro programa y contribuye a encontrar hogares para gatos, con acceso a eventos especiales y actualizaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beneficio 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img src="Imagenes/beneficio3.png" alt="Beneficio 3" class="card-img-top mx-auto" style="width: 25%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Reconocimiento en la web</h5>
+                                <p class="card-text">Recibe reconocimiento en nuestra web por tu apoyo, destacando tu contribución al bienestar de los gatos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Formulario -->
+                <div class="row mt-5">
+                    <div class="col-md-8 offset-md-2">
+                        <h3 class="text-center mb-4">Regístrate para Colaborar con Nosotros</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa el nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="4" placeholder="Cuéntanos por qué deseas colaborar"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Aceptar los términos y condiciones</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="contacto position-fixed bottom-0 end-0">
+            <a href="https://chat.whatsapp.com/BC5oGh1jPWn0VxsxmJv8al" target="_blank">
+                <img src="Imagenes/whatsapp.png" alt="Imagen fija" class="whatsapp">
+            </a>
+        </div>
+        
+
+        <!-- seccion 3 Para ti -->
+
+        <section class="py-5" id="parati">
+            <div class="container text-center mt-5">
+                <h2>Para ti</h2>
+                <p>
+                    Si buscas un amigo peludo, adopta, no compres. <br>
+                    Ellos te esperan con las patitas abiertas para darte un super abrazo gatunesco.
+                </p>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/gato6.jpg" class="d-block w-100" alt="gato6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/gato7.jpg" class="d-block w-100" alt="gato7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/gato8.jpg" class="d-block w-100" alt="gato8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/gato9.jpg" class="d-block w-100" alt="gato9">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+
+        <!-- Sección 4_preguntas -->
+
+        <section class="py-5 bg-negocios" id="preguntas">
+            <div class="container text-center mt-5">
+                <h2>Preguntas frecuentes</h2>
+                <p>Aquí te brindamos las preguntas más frecuentes que nos suelen hacer.</p>
+            </div>
+
+            <!-- preguntas -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    1. ¿Qué requisitos debo cumplir para adoptar un gato?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Para adoptar un gato, debes tener al menos 18 años,
+                                    presentar una
+                                    identificación oficial y llenar nuestro formulario de adopción. Además, es
+                                    importante demostrar
+                                    que puedes ofrecer un ambiente seguro y amoroso para el gato, lo que incluye una
+                                    entrevista y
+                                    una visita domiciliaria previa a la adopción.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    2. ¿Qué incluye la adopción de un gato?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">La adopción incluye la vacunación del gato, su
+                                    esterilización y un
+                                    chequeo médico previo. También te brindamos una orientación básica sobre el cuidado
+                                    del gato y
+                                    una primera consulta veterinaria gratuita.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    3. ¿Puedo devolver al gato si no me adapto a él?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Entendemos que, en ocasiones, puede haber problemas de
+                                    adaptación. Si
+                                    no logras adaptarte al gato o hay alguna complicación, puedes devolverlo dentro de
+                                    los primeros
+                                    30 días. Queremos asegurarnos de que el gato encuentre un hogar adecuado, por lo que
+                                    te
+                                    ayudaremos a explorar otras opciones.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    4. ¿Cuánto tiempo toma el proceso de adopción?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">El proceso de adopción generalmente toma entre 3 y 5 días,
+                                    dependiendo
+                                    de la rapidez con la que se completen los pasos, como la entrevista y la visita
+                                    domiciliaria.
+                                    Queremos asegurarnos de que el gato se vaya a un hogar adecuado, por lo que
+                                    dedicamos tiempo a
+                                    conocer a los adoptantes.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    5. ¿Qué debo hacer si tengo otro gato en casa?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Si ya tienes otro gato en casa, te recomendamos una
+                                    introducción
+                                    gradual entre ambos. Te proporcionaremos una guía sobre cómo presentar a los gatos
+                                    de manera
+                                    segura y tranquila para minimizar el estrés y favorecer una convivencia armoniosa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- imagen  -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="Imagenes/gato5.jpg" class="img-fluid" alt="Imagen de gato">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Sección 5 Descargas -->
+
+        <section class="py-5 bg-negocios" id="descargas">
+            <div class="container text-center mt-5">
+                <h2>Descargas</h2>
+                <p>¡Ya esta disponible nuestra app! Descargala y ayuda a mas gatitos a ser felices.</p>
+            </div>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <a href="#"><img src="Imagenes/play_store.png" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="Imagenes/app_store.png" alt=""></a>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer  -->
+    <footer class="bg-light text-dark pt-5 gb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-mg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 letra-roja">Nosotros</h5>
+                    <hr class="mb-4">
+                    <p>
+                        Somos una empresa que busca trabajar con personas con ganas de ayudar y mejorar la vida de
+                        nuestros amigos felinos.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 col-mg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 letra-roja">Contactanos</h5>
+                    <hr class="mb-4">
+
+                    <p><img src="Imagenes/hogar.png"> Av. Arequipa 2015 Lima </p>
+                    <p><img src="Imagenes/facebook.png"> Cat Home Oficial</p>
+                    <p><img src="Imagenes/sobre.png"> informes@cathome.com</p>
+                    <p><img src="Imagenes/llamada-telefonica.png"> 368 574 123</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
